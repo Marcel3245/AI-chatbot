@@ -3,7 +3,7 @@ import pyttsx3
 import os
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "your API key from chatGPT"
 
 # Set up the text-to-speech engine
 voice_engine = pyttsx3.init()
@@ -13,7 +13,7 @@ voice_engine.setProperty("volume", 1.0)
 
 # Count the number of files
 def num_files():
-    num_file = len([f for f in os.listdir("D:\Programowanie\My Programs\AI_TextFile\Logs") if f.endswith(".txt")])
+    num_file = len([f for f in os.listdir("Where should your conversation be saved") if f.endswith(".txt")])
     return str(num_file)
 
 # Set the directory log path
